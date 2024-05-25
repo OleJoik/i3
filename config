@@ -252,9 +252,6 @@ bar {
 
 exec_always --no-startup-id xkbcomp -I${HOME}/.config/xkb ${HOME}/.config/xkb/.extreme.xkb $DISPLAY
 
-exec_always --no-startup-id sleep 3; xmodmap /home/olol/.Xmodmap
-exec_always --no-startup-id sleep 3; setxkbmap us
-
 exec_always --no-startup-id xset r rate 200 30
 exec --no-startup-id xrandr --output HDMI-A-0 --above eDP
 exec_always --no-startup-id flameshot
