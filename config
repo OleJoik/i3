@@ -250,6 +250,8 @@ bar {
 }
 
 
+exec_always --no-startup-id xkbcomp -I${HOME}/.config/xkb ${HOME}/.config/xkb/.extreme.xkb $DISPLAY
+
 exec_always --no-startup-id sleep 3; xmodmap /home/olol/.Xmodmap
 exec_always --no-startup-id sleep 3; setxkbmap us
 
